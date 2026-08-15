@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InverstorPortal.Api", "Inve
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserDetails-Module", "UserDetails-Module", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Application", "UserDetails.Application\UserDetails.Application.csproj", "{12E55CED-EAA2-4212-952E-18F707F48D2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Application", "UserDetails-Module\UserDetails.Application\UserDetails.Application.csproj", "{12E55CED-EAA2-4212-952E-18F707F48D2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Domain", "UserDetails.Domain\UserDetails.Domain.csproj", "{275660DD-D088-407F-8652-A256EA05CF3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Domain", "UserDetails-Module\UserDetails.Domain\UserDetails.Domain.csproj", "{275660DD-D088-407F-8652-A256EA05CF3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Infrastructure", "UserDetails.Infrastructure\UserDetails.Infrastructure.csproj", "{0770E983-D59C-49A0-8A94-650931627969}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDetails.Infrastructure", "UserDetails-Module\UserDetails.Infrastructure\UserDetails.Infrastructure.csproj", "{0770E983-D59C-49A0-8A94-650931627969}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestorDbContext", "InvestorDbContext\InvestorDbContext.csproj", "{1E7F5502-3B40-4F70-9DFA-98A281481190}"
 EndProject

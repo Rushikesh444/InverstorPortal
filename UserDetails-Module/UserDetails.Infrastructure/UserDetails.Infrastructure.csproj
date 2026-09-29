@@ -20,6 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\InvestorDbContext\InvestorDbContext.csproj" />
+    <ProjectReference Include="..\UserDetails.Application\UserDetails.Application.csproj" />
     <ProjectReference Include="..\UserDetails.Domain\UserDetails.Domain.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UserDetails.Domain.Entities;
 
 namespace InvestorDbContext
 {
@@ -8,6 +9,7 @@ namespace InvestorDbContext
         {
         }
 
+        public DbSet<Investor> Investors { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

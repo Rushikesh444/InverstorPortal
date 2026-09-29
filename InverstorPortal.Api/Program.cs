@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using InvestorDbContext;
+using UserDetails.Application.Interfaces;
+using UserDetails.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +10,25 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("AS1DbConnection"));
+        builder.Configuration.GetConnectionString("AS1DbConnection"),
+        sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure();
+        });
 });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+builder.Services.AddScoped<IUserDetails, UserDetailsService>();
 
 // Add services to the container.
 
@@ -28,6 +47,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAngular");
 
 app.UseAuthorization();
 

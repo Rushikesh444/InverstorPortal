@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -22,9 +22,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InvestorDbContext\InvestorDbContext.csproj" />
-    <ProjectReference Include="..\UserDetails.Application\UserDetails.Application.csproj" />
-    <ProjectReference Include="..\UserDetails.Domain\UserDetails.Domain.csproj" />
-    <ProjectReference Include="..\UserDetails.Infrastructure\UserDetails.Infrastructure.csproj" />
+    <ProjectReference Include="..\UserDetails-Module\UserDetails.Application\UserDetails.Application.csproj" />
+    <ProjectReference Include="..\UserDetails-Module\UserDetails.Domain\UserDetails.Domain.csproj" />
+    <ProjectReference Include="..\UserDetails-Module\UserDetails.Infrastructure\UserDetails.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace UserDetails.Domain.Entities
+namespace UserDetails.Domain.DTOs
 {
-    public class Investor
+    public class UserDetailsDTO
     {
         public Guid InvestorId { get; set; }
 
@@ -27,20 +30,6 @@ namespace UserDetails.Domain.Entities
 
         public DateTime DateOfBirth { get; set; }
 
-        public string Password { get; set; } = null!;
-
         public bool? IsActive { get; set; }
-
-        public string? CreatedBy { get; set; }
-
-        public DateTime? CreatedOn { get; set; }
-
-        public string? ModifiedBy { get; set; }
-
-        public DateTime? ModifiedDate { get; set; }
-
-        public string? DeactivationBy { get; set; }
-
-        public DateTime? DeactivationDate { get; set; }
     }
 }
